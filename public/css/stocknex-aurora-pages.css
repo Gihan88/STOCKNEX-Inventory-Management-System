@@ -1,0 +1,109 @@
+body:has(.sidebar):not(:has(.sn-shell)) td {
+    color: #f9faff !important;
+    font-size: 15px !important;
+}
+
+body:has(.sidebar):not(:has(.sn-shell)) input {
+    color: #172744 !important;
+    background: #fff !important;
+    font-size: 16px !important;
+}
+
+body:has(.sidebar):not(:has(.sn-shell)) .field label { color: #fff !important; }
+body:has(.sidebar):not(:has(.sn-shell)) .panel-header p { color: #dce5ff !important; }
+body:has(.sidebar):not(:has(.sn-shell)) .user-cell span:last-child { color: #fff !important; }
+body:has(.sidebar):not(:has(.sn-shell)) .btn { color: white !important; }
+
+body:has(.sidebar):not(:has(.sn-shell)) .stat-icon,
+body:has(.sidebar):not(:has(.sn-shell)) .icon {
+    color: #29366e !important;
+}
+
+body:has(.sidebar):not(:has(.sn-shell)) .topbar .avatar { color: #2a397a !important; }
+
+/* 08. Login page theme (preserves form and layout) */
+body:has(.form-side) {
+    background:
+        radial-gradient(circle at 13% 14%, #5743a2, transparent 36%),
+        radial-gradient(circle at 87% 12%, #1b5e9d, transparent 42%),
+        #10142d !important;
+    color: #f7f8ff !important;
+}
+
+body:has(.form-side) .shell {
+    background: rgba(255, 255, 255, .12) !important;
+    border: 1px solid #ffffff66 !important;
+    box-shadow: 0 28px 75px #0609219c !important;
+    backdrop-filter: blur(28px);
+}
+
+body:has(.form-side) .form-side h2,
+body:has(.form-side) label { color: #fff !important; }
+
+body:has(.form-side) .subtitle,
+body:has(.form-side) .note { color: #dce5ff !important; }
+
+body:has(.form-side) .brand {
+    background: linear-gradient(150deg, #4d3f9c, #3157a6) !important;
+}
+
+body:has(.form-side) input {
+    background: #fff !important;
+    color: #182b50 !important;
+    font-size: 16px !important;
+}
+
+/* 09. Tablet and mobile responsive behavior */
+@media (max-width: 900px) {
+    .sn-shell { display: block; padding: 12px; }
+
+    .sn-sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: min(300px, 85vw);
+        z-index: 20;
+        transform: translateX(-110%);
+        transition: transform .2s;
+        border-radius: 0 25px 25px 0 !important;
+    }
+
+    .sn-sidebar.open { transform: translateX(0); }
+
+    .sn-shade.show {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: #050a20a6;
+        z-index: 15;
+    }
+
+    .sn-menu { display: inline-block; }
+
+    body:has(.sidebar):not(:has(.sn-shell)) .sidebar {
+        inset: 0 auto 0 0 !important;
+        width: 270px !important;
+        height: 100vh !important;
+        border-radius: 0 25px 25px 0 !important;
+    }
+
+    body:has(.sidebar):not(:has(.sn-shell)) .main {
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .sn-panel { padding: 17px; }
+    .sn-top { padding: 13px; }
+    .sn-heading { align-items: flex-start; }
+    .sn-heading .sn-btn { width: 100%; }
+    .sn-user .sn-name { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *:before, *:after {
+        transition: none !important;
+        animation: none !important;
+    }
+}

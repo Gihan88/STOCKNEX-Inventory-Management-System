@@ -1,0 +1,47 @@
+/* STOCKNEX - Clear Typography */
+
+body, button, input, select, textarea, table {
+    font-family: Verdana, Geneva, sans-serif !important;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0;
+}
+
+/* Sidebar */
+.nav-item, .nav-link, .sidebar a {
+    font-family: Verdana, sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+/* Headings */
+h1 {
+    font-size: 34px !important;
+    font-weight: 700 !important;
+}
+
+h2 {
+    font-size: 25px !important;
+    font-weight: 700 !important;
+}
+
+/* Statistics */
+.stat-value {
+    font-size: 44px !important;
+    font-weight: 700 !important;
+}
+
+/* Tables */
+th, td {
+    font-size: 15px !important;
+}
+
+/* Small descriptive text */
+small, .stat-foot, .product-code {
+    font-size: 14px !important;
+}
+
+/* Improve readability */
+p, span, label, a {
+    text-shadow: none !important;
+}
